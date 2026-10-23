@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2c55">
+  <meta name="description" content="Información del Campus Cobán, Alta Verapaz, de la Universidad Mariano Gálvez de Guatemala: carreras, servicios, avisos, preguntas frecuentes y contacto. Proyecto académico estudiantil.">
+  <title>Campus Cobán | Universidad Mariano Gálvez</title>
+  <link rel="icon" href="imagenes/logo-umg.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/efectos.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/efectos.js" defer></script>
+</head>
+<body>
+  <!--
+    GUÍA RÁPIDA DE EDICIÓN
+    - Datos tomados de https://www.umg.edu.gt/coban y de la página de cada carrera (consulta: 21/10/2026).
+    - Todo dato que falte confirmar usa: <span class="dato-pendiente" data-pendiente>[Descripción]</span>
+    - Al confirmarlo, reemplaza la etiqueta completa por el texto real.
+    - Abre la página con ?revisar al final de la dirección para ver la lista de datos pendientes.
+  -->
+
+  <!-- Íconos reutilizables: se usan con <svg viewBox="0 0 24 24"><use href="#i-nombre"/></svg> -->
+  <svg class="icon-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+    <symbol id="i-hotel" viewBox="0 0 24 24"><path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 8V6M10 6h4"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 21V11M12 11c0-4 3-7 8-7 0 5-3 8-8 7ZM12 14c0-3-2.5-5.5-7-5.5 0 4 2.5 6 7 5.5Z"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6M8 10h.01M16 10h.01M2 21h20"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v17M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0L5 7ZM19 7l-3 7a3 3 0 0 0 6 0l-3-7Z"/></symbol>
+    <symbol id="i-health" viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3C4.5 3 3 5 3 7.5c0 3 2 4.5 2.5 8S7 21 8.5 21s1.5-5 3.5-5 2 5 3.5 5 2.5-2 3-5.5S21 10.5 21 7.5C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3Z"/></symbol>
+    <symbol id="i-mind" viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-7 7c0 2.5 1.2 4 2 5v6h7v-3h3a2 2 0 0 0 2-2v-3l2-1-2-3a7 7 0 0 0-7-6Z"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><path d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM2 20c.6-3.5 3.3-5.5 7-5.5s6.4 2 7 5.5M16 4.5a3.5 3.5 0 0 1 0 6.5M18 14.5c2 .7 3.5 2.6 4 5.5"/></symbol>
+    <symbol id="i-language" viewBox="0 0 24 24"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c0 4-3 8-7 9M13 21l4-10 4 10M14.5 17.5h5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5ZM4 19a2 2 0 0 1 2-2h13"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24"><path d="M5 3h14v18H5zM8 7h8M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><path d="M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14ZM20 20l-4-4"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 10v4h4l7 5V5l-7 5H3ZM18 8a5 5 0 0 1 0 8"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M10 21V10M14 21V10M19 21V10M2 10l10-6 10 6Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Campus Cobán, Universidad Mariano Gálvez. Ir al inicio">
+        <img class="brand-logo" src="imagenes/logo-umg.png" alt="" width="44" height="44">
+        <span class="brand-copy">
+          <strong>Campus Cobán</strong>
+          <span>Universidad Mariano Gálvez de Guatemala</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span>Menú</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#sede">La sede</a>
+        <a href="#carreras">Carreras</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#avisos">Avisos</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="nav-cta" href="#contacto">Contacto</a>
+        <button class="motion-toggle" type="button" title="Pausar o reanudar animaciones">
+          <span class="motion-icon" aria-hidden="true"></span>
+          <span class="motion-label">Pausar animaciones</span>
+        </button>
+      </nav>
+    </div>
+    <span class="reading-progress" aria-hidden="true"></span>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ PRESENTACIÓN ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <span class="hero-blob hero-blob-red" aria-hidden="true"></span>
+      <span class="hero-blob hero-blob-blue" aria-hidden="true"></span>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light hero-in" style="--d:0"><span class="eyebrow-line" aria-hidden="true"></span>Cobán, Alta Verapaz</p>
+          <h1 id="hero-title" class="hero-in" style="--d:1">
+            <span class="sr-only">Tu carrera universitaria, cerca de casa.</span>
+            <span aria-hidden="true">Tu <span class="rotator" data-words="carrera|futuro|proyecto|profesión">carrera</span> universitaria, <span class="h1-accent">cerca de casa.</span></span>
+          </h1>
+          <p class="hero-lead hero-in" style="--d:2">Licenciaturas, profesorados, maestrías y cursos libres de la Universidad Mariano Gálvez en el Campus Cobán, en modalidades presencial y virtual.</p>
+          <div class="hero-actions hero-in" style="--d:3">
+            <a class="button button-primary magnetic" href="#carreras">Consultar carreras <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost magnetic" href="#contacto">Contacto</a>
+          </div>
+        </div>
+
+        <figure class="hero-art hero-in" style="--d:2" data-tilt>
+          <img src="imagenes/foto-academica-edificio.jpg" alt="Fotografía ilustrativa de un edificio universitario; no corresponde al Campus Cobán" width="1500" height="1000" fetchpriority="high">
+          <span class="float-badge float-badge-top" aria-hidden="true"><span class="badge-dot"></span>Educación superior desde 1966</span>
+          <span class="float-badge float-badge-bottom" aria-hidden="true"><strong data-count-from=".program-card">26</strong> programas para explorar</span>
+          <figcaption>Imagen ilustrativa · no es el Campus Cobán</figcaption>
+        </figure>
+      </div>
+
+      <!-- Accesos por intención: guían a cada visitante a la sección que necesita -->
+      <div class="container">
+        <nav class="intent-bar" aria-label="Accesos rápidos según lo que necesitas">
+          <p class="intent-title">¿Qué necesitas hoy?</p>
+          <a class="intent-card spotlight" href="#carreras">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M7 11.5V16c0 1.4 2.2 3 5 3s5-1.6 5-3v-4.5"/></svg>
+            <span><strong>Quiero estudiar</strong><small>Ver carreras y requisitos</small></span>
+            <span class="intent-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="intent-card spotlight" href="#servicios">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+            <span><strong>Ya estudio aquí</strong><small>Servicios y avisos</small></span>
+            <span class="intent-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="intent-card spotlight" href="#contacto">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <span><strong>Necesito ubicarme</strong><small>Dirección y contacto</small></span>
+            <span class="intent-arrow" aria-hidden="true">→</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Cinta decorativa en movimiento (se pausa con el botón "Pausar animaciones") -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Ingeniería en Sistemas</span><b>✦</b><span>Arquitectura</span><b>✦</b><span>Ciencias Médicas</span><b>✦</b><span>Ciencias Jurídicas y Sociales</span><b>✦</b><span>Psicología Clínica</span><b>✦</b><span>Ingeniería en Agronomía</span><b>✦</b><span>Administración de Empresas</span><b>✦</b><span>Odontología</span><b>✦</b>
+        <span>Ingeniería en Sistemas</span><b>✦</b><span>Arquitectura</span><b>✦</b><span>Ciencias Médicas</span><b>✦</b><span>Ciencias Jurídicas y Sociales</span><b>✦</b><span>Psicología Clínica</span><b>✦</b><span>Ingeniería en Agronomía</span><b>✦</b><span>Administración de Empresas</span><b>✦</b><span>Odontología</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ============ LA SEDE ============ -->
+    <section class="section-pad" id="sede" aria-labelledby="sede-title">
+      <div class="container">
+        <div class="section-topline">
+          <div class="section-heading">
+            <p class="eyebrow">Información de la sede</p>
+            <h2 id="sede-title">Conoce el Campus <span>Cobán.</span></h2>
+          </div>
+          <!-- El primer contador se calcula solo a partir de las tarjetas de carreras -->
+          <ul class="stats">
+            <li class="stat"><strong data-count-from=".program-card">26</strong><span>programas en la oferta</span></li>
+            <li class="stat"><strong>+<span data-count-to="100">100</span></strong><span>aulas modernas</span></li>
+            <li class="stat"><strong data-count-to="60">60</strong><span>años al servicio de la educación</span></li>
+          </ul>
+        </div>
+
+        <div class="tabs" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Información institucional">
+            <span class="tab-indicator" aria-hidden="true"></span>
+            <button class="tab" type="button" role="tab" id="tab-sede" aria-controls="panel-sede" aria-selected="true">La sede</button>
+            <button class="tab" type="button" role="tab" id="tab-umg" aria-controls="panel-umg" aria-selected="false" tabindex="-1">La universidad</button>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-sede" aria-labelledby="tab-sede" tabindex="0">
+            <div class="sede-grid">
+              <div class="sede-copy">
+                <p>El Campus Cobán de la Universidad Mariano Gálvez de Guatemala se presenta como un espacio de excelencia académica, innovación educativa e infraestructura moderna, que forma líderes con visión y propósito.</p>
+                <p>Cuenta con aulas automatizadas con tecnología audiovisual integrada y conectividad, ambientes flexibles y reconfigurables pensados en el estudiante, biblioteca, parqueo y servicios de apoyo a la comunidad como el Bufete Popular y la Clínica de Psicología.</p>
+                <a class="text-link" href="https://www.umg.edu.gt/coban" target="_blank" rel="noopener noreferrer">Ver el campus y su tour virtual 360° <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+              <dl class="fact-list">
+                <div class="fact">
+                  <dt>Oficinas</dt>
+                  <dd>6a. Avenida 2-33, zona 1 (Avenida del Estadio), Cobán</dd>
+                </div>
+                <div class="fact">
+                  <dt>Campus</dt>
+                  <dd>1ra. Calle 4-29, zona 5, Cobán</dd>
+                </div>
+                <div class="fact">
+                  <dt>Horario de atención</dt>
+                  <dd>Lunes a viernes, 09:00 a 19:00<br>Sábado, 08:00 a 17:00</dd>
+                </div>
+                <div class="fact">
+                  <dt>Teléfonos</dt>
+                  <dd>PBX 7952 1041 · 7952 1776</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-umg" aria-labelledby="tab-umg" tabindex="0">
+            <div class="identity-grid">
+              <article class="identity-card" data-tilt>
+                <span class="card-kicker">Origen</span>
+                <h3>Una universidad guatemalteca</h3>
+                <p>La UMG se describe como una institución privada, independiente y no lucrativa. Su aprobación institucional fue el 29 de enero de 1966, según su reseña oficial.</p>
+              </article>
+              <article class="identity-card" data-tilt>
+                <span class="card-kicker">Misión</span>
+                <h3>Formación integral</h3>
+                <p>Destaca la excelencia académica, la formación ética y científica, y el desarrollo conjunto de docencia, investigación y servicio a la comunidad.</p>
+              </article>
+              <article class="identity-card" data-tilt>
+                <span class="card-kicker">Visión</span>
+                <h3>Conocimiento para el futuro</h3>
+                <p>Plantea una institución competitiva e innovadora que prepare personas capaces de responder a desafíos sociales, económicos, científicos y tecnológicos.</p>
+              </article>
+            </div>
+            <a class="text-link" href="https://www.umg.edu.gt/" target="_blank" rel="noopener noreferrer">Información institucional completa <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+          </div>
+        </div>
+
+        <!-- Paneles de fotos que se expanden al pasar el cursor o al enfocarlos con Tab -->
+        <div class="photo-panels" aria-label="Vida universitaria (fotografías ilustrativas)" role="group">
+          <figure class="photo-panel" tabindex="0">
+            <img src="imagenes/foto-estudiantes.jpg" alt="Estudiantes trabajando juntos alrededor de una computadora; fotografía ilustrativa" width="1000" height="667" loading="lazy">
+            <figcaption><strong>Trabajo en equipo</strong><span>Ideas que se construyen entre todos.</span></figcaption>
+          </figure>
+          <figure class="photo-panel" tabindex="0">
+            <img src="imagenes/foto-colaboracion-tecnologica.jpg" alt="Personas colaborando con computadoras portátiles; fotografía ilustrativa" width="1000" height="667" loading="lazy">
+            <figcaption><strong>Tecnología aplicada</strong><span>Aulas con tecnología audiovisual y conectividad.</span></figcaption>
+          </figure>
+          <figure class="photo-panel" tabindex="0">
+            <img src="imagenes/foto-academica-edificio.jpg" alt="Edificio universitario; fotografía ilustrativa" width="1500" height="1000" loading="lazy">
+            <figcaption><strong>Espacios para aprender</strong><span>Ambientes flexibles centrados en el estudiante.</span></figcaption>
+          </figure>
+        </div>
+        <p class="photo-note">Fotografías ilustrativas (Unsplash). No muestran el Campus Cobán ni a su comunidad. Para ver el campus real, visita el tour 360° del sitio oficial.</p>
+      </div>
+    </section>
+
+    <!-- ============ OFERTA ACADÉMICA ============ -->
+    <section class="section-pad section-tint" id="carreras" aria-labelledby="carreras-title">
+      <div class="container">
+        <div class="section-topline">
+          <div class="section-heading">
+            <p class="eyebrow">Oferta académica</p>
+            <h2 id="carreras-title">Encuentra tu <span>carrera.</span></h2>
+          </div>
+          <p class="section-summary">Gira cada tarjeta para ver duración, modalidad y título. Las jornadas disponibles en Cobán se confirman directamente con la sede.</p>
+        </div>
+
+        <div class="program-tools">
+          <div class="filter-rows">
+            <div class="chip-group" role="group" aria-label="Filtrar por nivel">
+              <button class="chip" type="button" data-area="todas" aria-pressed="true">Todas</button>
+              <button class="chip" type="button" data-area="licenciatura" aria-pressed="false">Licenciaturas</button>
+              <button class="chip" type="button" data-area="profesorado" aria-pressed="false">Profesorados</button>
+              <button class="chip" type="button" data-area="maestria" aria-pressed="false">Maestrías</button>
+              <button class="chip" type="button" data-area="curso" aria-pressed="false">Cursos libres</button>
+            </div>
+            <div class="chip-group chip-group-small" role="group" aria-label="Filtrar por modalidad">
+              <span class="chip-label" aria-hidden="true">Modalidad:</span>
+              <button class="chip" type="button" data-modalidad="todas" aria-pressed="true">Todas</button>
+              <button class="chip" type="button" data-modalidad="presencial" aria-pressed="false">Presencial</button>
+              <button class="chip" type="button" data-modalidad="virtual" aria-pressed="false">Virtual</button>
+            </div>
+          </div>
+          <div class="search-field">
+            <label for="program-search">Buscar carrera</label>
+            <div class="search-control">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+              <input id="program-search" type="search" placeholder="Ej. sistemas, psicología…" autocomplete="off">
+            </div>
+          </div>
+        </div>
+        <p class="status-line" id="program-count" aria-live="polite">26 programas</p>
+
+        <!--
+          PARA AGREGAR UNA CARRERA: copia un <article class="program-card"> completo.
+          data-area: licenciatura | profesorado | maestria | curso
+          data-modalidad: presencial | virtual | "presencial virtual"
+          El ícono se cambia en <use href="#i-..."> (ver lista de íconos al inicio del archivo).
+          Fuente: oferta listada en umg.edu.gt/coban y página oficial de cada programa.
+        -->
+        <div class="program-grid" id="program-grid">
+          <!-- ===== Licenciaturas ===== -->
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial" data-search="hoteleria turismo gastronomia cocina administracion">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-hotel"/></svg></span>
+                <h3>Administración de Hotelería, Turismo y Gastronomía</h3>
+                <p class="program-quick" aria-hidden="true">4 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Hotelería, Turismo y Gastronomía</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>4 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Administración de Hotelería, Turismo y Gastronomía</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/2025" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Administración de Hotelería, Turismo y Gastronomía">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial" data-search="arquitectura diseno construccion">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-building"/></svg></span>
+                <h3>Arquitectura</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Arquitectura</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Arquitectura</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/600" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Arquitectura">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial virtual" data-search="administracion empresas negocios gestion">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-chart"/></svg></span>
+                <h3>Administración de Empresas</h3>
+                <p class="program-quick" aria-hidden="true">4 años · Presencial y virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Administración de Empresas</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>4 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Administración de Empresas</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/021" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Administración de Empresas">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial" data-search="ciencias juridicas sociales derecho abogado notario leyes">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-scale"/></svg></span>
+                <h3>Ciencias Jurídicas y Sociales</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Ciencias Jurídicas y Sociales</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Ciencias Jurídicas y Sociales</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/050" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Ciencias Jurídicas y Sociales">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial" data-search="ciencias medicas medicina salud medico">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-health"/></svg></span>
+                <h3>Ciencias Médicas</h3>
+                <p class="program-quick" aria-hidden="true">7 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Ciencias Médicas</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>7 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Ciencias Médicas</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/200" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Ciencias Médicas">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial" data-search="contaduria publica auditoria contador finanzas">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-calc"/></svg></span>
+                <h3>Contaduría Pública y Auditoría</h3>
+                <p class="program-quick" aria-hidden="true">4 años y medio · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Contaduría Pública y Auditoría</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>4 años y medio (sujeto a jornada)</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Contaduría Pública y Auditoría</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/032" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Contaduría Pública y Auditoría">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial" data-search="criminologia politica criminal criminalistica seguridad">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-search"/></svg></span>
+                <h3>Criminología y Política Criminal</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Criminología y Política Criminal</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Criminología y Política Criminal</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/1654" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Criminología y Política Criminal">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial virtual" data-search="enfermeria salud">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-health"/></svg></span>
+                <h3>Enfermería</h3>
+                <p class="program-quick" aria-hidden="true">6 años · Presencial y virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Enfermería</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>6 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Enfermería</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/100" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Enfermería">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial" data-search="ingenieria agronomia agronomo agricola campo">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-leaf"/></svg></span>
+                <h3>Ingeniería en Agronomía</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Ingeniería en Agronomía</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Ingeniero/a Agrónomo</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/0113" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Ingeniería en Agronomía">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial virtual" data-search="ingenieria sistemas informatica computacion tecnologia programacion software">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-code"/></svg></span>
+                <h3>Ingeniería en Sistemas</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial y virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Ingeniería en Sistemas</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                  <div><dt>Título</dt><dd>Ingeniero en Sistemas de Información y Ciencias de la Computación</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/090" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Ingeniería en Sistemas">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial virtual" data-search="mercadotecnia marketing ventas publicidad">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-megaphone"/></svg></span>
+                <h3>Mercadotecnia</h3>
+                <p class="program-quick" aria-hidden="true">4 años · Presencial y virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Mercadotecnia</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>4 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Mercadotecnia</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/023" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Mercadotecnia">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial" data-search="odontologia dentista salud">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-tooth"/></svg></span>
+                <h3>Odontología</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Odontología</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Odontología</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/040" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Odontología">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial virtual" data-search="psicologia clinica salud mental">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-mind"/></svg></span>
+                <h3>Psicología Clínica</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial y virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Psicología Clínica</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Psicología Clínica</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/6972" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Psicología Clínica">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial virtual" data-search="psicologia industrial organizacional recursos humanos">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-mind"/></svg></span>
+                <h3>Psicología Industrial</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial y virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Psicología Industrial</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Psicología Industrial</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/301" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Psicología Industrial">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial virtual" data-search="trabajo social comunidad">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-people"/></svg></span>
+                <h3>Trabajo Social</h3>
+                <p class="program-quick" aria-hidden="true">5 años · Presencial y virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Trabajo Social</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Trabajo Social</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/7001" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Trabajo Social">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="virtual" data-search="sociolinguistica educacion bilingue intercultural idiomas mayas">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-language"/></svg></span>
+                <h3>Sociolingüística Aplicada a la Educación Bilingüe Intercultural de Guatemala</h3>
+                <p class="program-quick" aria-hidden="true">5 años y medio · Virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Sociolingüística</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>5 años y medio</dd></div>
+                  <div><dt>Modalidad</dt><dd>Virtual</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Sociolingüística</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/073" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Sociolingüística Aplicada a la Educación Bilingüe Intercultural">↻</button>
+          </article>
+
+          <article class="program-card" data-area="licenciatura" data-modalidad="presencial virtual" data-search="gestion publica gobierno administracion publica">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Licenciatura</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-landmark"/></svg></span>
+                <h3>Gestión Pública con Orientación Profesional</h3>
+                <p class="program-quick" aria-hidden="true">4 años · Presencial y virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Gestión Pública</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>4 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                  <div><dt>Título</dt><dd>Licenciado en Gestión Pública con Orientación Profesional</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/255" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de Gestión Pública con Orientación Profesional">↻</button>
+          </article>
+
+          <!-- ===== Profesorados ===== -->
+          <article class="program-card" data-area="profesorado" data-modalidad="virtual" data-search="profesorado ciencias sociales formacion ciudadana docente maestro">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Profesorado</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-book"/></svg></span>
+                <h3>Ciencias Sociales y Formación Ciudadana</h3>
+                <p class="program-quick" aria-hidden="true">3 años · Virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Ciencias Sociales y Formación Ciudadana</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>3 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Virtual</dd></div>
+                  <div><dt>Título</dt><dd>Profesor en Enseñanza Media en Ciencias Sociales y Formación Ciudadana</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/7972" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta del Profesorado en Ciencias Sociales y Formación Ciudadana">↻</button>
+          </article>
+
+          <article class="program-card" data-area="profesorado" data-modalidad="virtual" data-search="profesorado comunicacion lenguaje docente maestro">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Profesorado</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-chat"/></svg></span>
+                <h3>Comunicación y Lenguaje</h3>
+                <p class="program-quick" aria-hidden="true">3 años · Virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Comunicación y Lenguaje</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>3 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Virtual</dd></div>
+                  <div><dt>Título</dt><dd>Profesor en Comunicación y Lenguaje</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/4172" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta del Profesorado en Comunicación y Lenguaje">↻</button>
+          </article>
+
+          <article class="program-card" data-area="profesorado" data-modalidad="virtual" data-search="profesorado educacion pre-primaria preprimaria parvulos docente maestra">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Profesorado</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-people"/></svg></span>
+                <h3>Especialización en Educación Pre-Primaria</h3>
+                <p class="program-quick" aria-hidden="true">3 años · Virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Educación Pre-Primaria</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>3 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Virtual</dd></div>
+                  <div><dt>Título</dt><dd>Profesor Especializado en Educación Pre-Primaria</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/4715" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta del Profesorado en Educación Pre-Primaria">↻</button>
+          </article>
+
+          <article class="program-card" data-area="profesorado" data-modalidad="virtual" data-search="profesorado educacion primaria docente maestro">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Profesorado</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-book"/></svg></span>
+                <h3>Especialización en Educación Primaria</h3>
+                <p class="program-quick" aria-hidden="true">3 años · Virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Educación Primaria</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>3 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Virtual</dd></div>
+                  <div><dt>Título</dt><dd>Profesor Especializado en Educación Primaria</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/3715" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta del Profesorado en Educación Primaria">↻</button>
+          </article>
+
+          <article class="program-card" data-area="profesorado" data-modalidad="virtual" data-search="profesorado fisica matematica docente maestro">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Profesorado</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-calc"/></svg></span>
+                <h3>Física y Matemática</h3>
+                <p class="program-quick" aria-hidden="true">3 años · Virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Física y Matemática</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>3 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Virtual</dd></div>
+                  <div><dt>Título</dt><dd>Profesor en Física y Matemática</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/3972" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta del Profesorado en Física y Matemática">↻</button>
+          </article>
+
+          <article class="program-card" data-area="profesorado" data-modalidad="virtual" data-search="profesorado pedagogia tecnologia educativa docente">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Profesorado</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-code"/></svg></span>
+                <h3>Pedagogía, Tecnología Educativa</h3>
+                <p class="program-quick" aria-hidden="true">1 año · Virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Tecnología Educativa</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>1 año</dd></div>
+                  <div><dt>Modalidad</dt><dd>Virtual</dd></div>
+                  <div><dt>Título</dt><dd>Profesor en Pedagogía en Tecnología Educativa</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/7070" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta del Profesorado en Pedagogía, Tecnología Educativa">↻</button>
+          </article>
+
+          <!-- ===== Maestrías ===== -->
+          <article class="program-card" data-area="maestria" data-modalidad="presencial" data-search="maestria ginecologia obstetricia medicina especialidad">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Maestría</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-health"/></svg></span>
+                <h3>Ginecología y Obstetricia</h3>
+                <p class="program-quick" aria-hidden="true">4 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Ginecología y Obstetricia</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>4 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Magister Artium y Especialista en Ginecología y Obstetricia</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/2013" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de la Maestría en Ginecología y Obstetricia">↻</button>
+          </article>
+
+          <article class="program-card" data-area="maestria" data-modalidad="presencial" data-search="maestria pediatria medicina ninos especialidad">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Maestría</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-health"/></svg></span>
+                <h3>Pediatría</h3>
+                <p class="program-quick" aria-hidden="true">4 años · Presencial</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Pediatría</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>4 años</dd></div>
+                  <div><dt>Modalidad</dt><dd>Presencial</dd></div>
+                  <div><dt>Título</dt><dd>Magister Artium y Especialista en Pediatría</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/2016" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta de la Maestría en Pediatría">↻</button>
+          </article>
+
+          <!-- ===== Cursos libres ===== -->
+          <article class="program-card" data-area="curso" data-modalidad="virtual" data-search="curso libre ingles idioma english">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <span class="program-area">Curso libre</span>
+                <span class="program-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-language"/></svg></span>
+                <h3>Inglés</h3>
+                <p class="program-quick" aria-hidden="true">1 mes · Virtual</p>
+                <span class="flip-hint" aria-hidden="true"><span class="hint-hover">Pasa el cursor para girar</span><span class="hint-touch">Toca ↻ para ver detalles</span></span>
+                <span class="card-number" aria-hidden="true"></span>
+              </div>
+              <div class="flip-face flip-back">
+                <p class="back-title" aria-hidden="true">Curso libre de Inglés</p>
+                <dl class="program-meta">
+                  <div><dt>Duración</dt><dd>1 mes</dd></div>
+                  <div><dt>Modalidad</dt><dd>Virtual</dd></div>
+                  <div><dt>Certificado</dt><dd>Cursos Libres de Inglés</dd></div>
+                </dl>
+                <a class="card-link" href="https://www.umg.edu.gt/0760" target="_blank" rel="noopener noreferrer">Ver programa oficial <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+            <button class="flip-toggle" type="button" aria-pressed="false" aria-label="Girar tarjeta del Curso libre de Inglés">↻</button>
+          </article>
+        </div>
+
+        <div class="empty-state" id="no-programs" hidden>
+          <p>No hay programas que coincidan con tu búsqueda.</p>
+          <button class="button button-small" type="button" id="clear-filters">Mostrar todos</button>
+        </div>
+
+        <p class="source-note">Duración, modalidad y título según la página oficial de cada programa. Oferta listada en <a href="https://www.umg.edu.gt/coban" target="_blank" rel="noopener noreferrer">umg.edu.gt/coban</a>. Verifica jornadas y vigencia con la sede.</p>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section-pad" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <div class="section-topline">
+          <div class="section-heading">
+            <p class="eyebrow">Para estudiantes</p>
+            <h2 id="servicios-title">Servicios que <span>te acompañan.</span></h2>
+          </div>
+          <p class="section-summary">Servicios publicados en la página oficial del Campus Cobán.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card spotlight">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-6h6v6"/></svg>
+            <span class="status status-ok">En línea</span>
+            <h3>Admisiones e inscripción</h3>
+            <p>Inscripción en línea con pago mediante tarjeta de crédito o débito.</p>
+            <a class="card-link" href="https://www.umg.edu.gt/info/aspirantes/" target="_blank" rel="noopener noreferrer">Ver requisitos oficiales <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+          </article>
+          <article class="service-card spotlight">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h5v16H5zM10 4h4v16h-4zM14.5 5.2l3.9-1 3.6 15.5-3.9 1z"/></svg>
+            <span class="status status-ok">Campus</span>
+            <h3>Biblioteca</h3>
+            <p>Espacio de consulta y estudio para estudiantes.</p>
+            <p class="service-detail"><strong>Lunes a viernes</strong>, 13:00 a 19:00</p>
+          </article>
+          <article class="service-card spotlight">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-scale"/></svg>
+            <span class="status status-ok">Comunidad</span>
+            <h3>Bufete Popular</h3>
+            <p>Servicio de asesoría jurídica y legal.</p>
+            <p class="service-detail"><strong>Lunes a viernes</strong>, 08:00 a 18:00 · Cel. 4995-5536</p>
+          </article>
+          <article class="service-card spotlight">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mind"/></svg>
+            <span class="status status-ok">Comunidad</span>
+            <h3>Clínica de Psicología</h3>
+            <p>Atención psicológica en el campus.</p>
+            <p class="service-detail"><strong>Febrero a octubre</strong> · horarios variables</p>
+          </article>
+          <article class="service-card spotlight">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+            <span class="status status-ok">Campus</span>
+            <h3>Parqueos</h3>
+            <p>Espacios para motos y vehículos dentro del campus.</p>
+            <p class="service-detail">Horario de acuerdo con las jornadas académicas</p>
+          </article>
+          <article class="service-card spotlight">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="1.5"/><path d="M2 19h20"/><path d="m9 9-2 2 2 2M15 9l2 2-2 2"/></svg>
+            <span class="status status-ok">Campus</span>
+            <h3>Aulas tecnológicas</h3>
+            <p>Aulas automatizadas con tecnología audiovisual integrada y conectividad.</p>
+            <p class="service-detail">Más de 100 aulas modernas</p>
+          </article>
+        </div>
+
+        <ul class="service-notes">
+          <li><strong>Pagos y bancos:</strong> aún no se cuenta con ventanilla dentro de las oficinas administrativas ni del campus.</li>
+          <li><strong>Cafetería:</strong> en construcción.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ AVISOS ============ -->
+    <section class="section-pad section-dark spotlight-dark" id="avisos" aria-labelledby="avisos-title">
+      <div class="container">
+        <div class="section-topline">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-light">Agenda</p>
+            <h2 id="avisos-title">Avisos y próximas <span>actividades.</span></h2>
+          </div>
+          <div class="segmented" role="group" aria-label="Mostrar avisos">
+            <button type="button" data-notice-filter="proximos" aria-pressed="true">Próximos</button>
+            <button type="button" data-notice-filter="todos" aria-pressed="false">Todos</button>
+          </div>
+        </div>
+
+        <!--
+          CÓMO AGREGAR UN AVISO: copia un <article class="notice">.
+          data-fecha usa el formato AAAA-MM-DD (ej. 2026-11-20). Déjalo vacío si la fecha no está confirmada.
+          La página ordena los avisos por fecha y marca automáticamente "Hoy", "En X días" o "Finalizado".
+          La página oficial del campus no publicaba avisos con fecha al momento de la consulta.
+        -->
+        <div class="timeline">
+          <span class="timeline-line" aria-hidden="true"><span class="timeline-fill"></span></span>
+          <div class="notice-list" id="notice-list">
+            <article class="notice" data-fecha="">
+              <div class="notice-date" aria-hidden="true"><span class="notice-day">--</span><span class="notice-month">Fecha</span></div>
+              <div class="notice-body">
+                <p class="notice-meta"><span class="notice-tag">Inscripciones</span><span class="notice-when"></span></p>
+                <h3><span class="dato-pendiente" data-pendiente>[Título del aviso]</span></h3>
+                <p><span class="dato-pendiente" data-pendiente>[Detalle, lugar y fecha confirmados por la sede]</span></p>
+              </div>
+            </article>
+            <article class="notice" data-fecha="">
+              <div class="notice-date" aria-hidden="true"><span class="notice-day">--</span><span class="notice-month">Fecha</span></div>
+              <div class="notice-body">
+                <p class="notice-meta"><span class="notice-tag">Actividad académica</span><span class="notice-when"></span></p>
+                <h3><span class="dato-pendiente" data-pendiente>[Título de la actividad]</span></h3>
+                <p><span class="dato-pendiente" data-pendiente>[Detalle, lugar y fecha confirmados por la sede]</span></p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="empty-state empty-dark" id="no-notices" hidden>No hay actividades próximas registradas. Revisa “Todos” o consulta el canal oficial.</p>
+
+        <p class="official-note">Las fechas oficiales se publican en la <a href="https://www.umg.edu.gt/coban" target="_blank" rel="noopener noreferrer">página del Campus Cobán <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a> y en las redes oficiales de la UMG. Este sitio no publica fechas sin confirmación.</p>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="section-pad" id="preguntas" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Resolvemos tus dudas</p>
+          <h2 id="faq-title">Preguntas <span>frecuentes.</span></h2>
+          <div class="search-field faq-search">
+            <label for="faq-search">Buscar en las preguntas</label>
+            <div class="search-control">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+              <input id="faq-search" type="search" placeholder="Ej. requisitos, horario…" autocomplete="off">
+            </div>
+          </div>
+          <p class="status-line" id="faq-count" aria-live="polite"></p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>¿Qué carreras se ofrecen en el Campus Cobán?</summary>
+            <div class="faq-answer"><p>El sitio oficial lista licenciaturas, profesorados, maestrías y un curso libre de inglés. Revisa la sección de <a href="#carreras">oferta académica</a> para ver duración, modalidad y título de cada uno.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cuáles son los requisitos de inscripción?</summary>
+            <div class="faq-answer">
+              <p>Para estudiantes recién graduados de diversificado, el sitio oficial indica:</p>
+              <ul>
+                <li>Constancia de Evaluación de Ubicación (Campus Central).</li>
+                <li>Completar el formulario de nuevo estudiante.</li>
+                <li>Original y fotocopia de DPI o pasaporte.</li>
+                <li>Certificación original de Básicos y Diversificado.</li>
+                <li>Fotostática del título de 5 × 7 pulgadas, sellada por la Contraloría de Cuentas.</li>
+                <li>Dos fotografías recientes tamaño cédula.</li>
+                <li>Efectuar los pagos de inscripción correspondientes.</li>
+              </ul>
+              <p>Hay requisitos distintos para aspirantes extranjeros y traslados. Consulta los <a href="https://www.umg.edu.gt/info/aspirantes/" target="_blank" rel="noopener noreferrer">requisitos oficiales</a>.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Puedo inscribirme en línea?</summary>
+            <div class="faq-answer"><p>Sí. El sitio oficial indica que la inscripción puede hacerse en línea, con pago mediante tarjeta de crédito o débito. Más información en <a href="https://www.umg.edu.gt/admisiones" target="_blank" rel="noopener noreferrer">Admisiones UMG</a>.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Hay carreras virtuales?</summary>
+            <div class="faq-answer"><p>Sí. Los profesorados, la Licenciatura en Sociolingüística y el curso de Inglés son virtuales, y varias licenciaturas se ofrecen en modalidad presencial y virtual. Usa el filtro <a href="#carreras">“Modalidad: Virtual”</a> para verlas.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cuál es el horario de atención?</summary>
+            <div class="faq-answer"><p>Lunes a viernes de 09:00 a 19:00 horas y sábado de 08:00 a 17:00 horas. La biblioteca atiende de lunes a viernes de 13:00 a 19:00 horas.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Puedo pagar en el campus?</summary>
+            <div class="faq-answer"><p>Según el sitio oficial, aún no se cuenta con ventanilla de pagos dentro de las oficinas administrativas ni del campus.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Puedo enviar mis datos desde esta página?</summary>
+            <div class="faq-answer"><p>No. Esta página es informativa: no tiene formularios ni guarda información. Usa los canales oficiales de la universidad.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Este es el sitio oficial de la universidad?</summary>
+            <div class="faq-answer"><p>No. Es un proyecto académico estudiantil. La fuente oficial es <a href="https://www.umg.edu.gt/" target="_blank" rel="noopener noreferrer">umg.edu.gt</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UBICACIÓN Y CONTACTO ============ -->
+    <section class="section-pad section-tint" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="section-topline">
+          <div class="section-heading">
+            <p class="eyebrow">Ubicación y contacto</p>
+            <h2 id="contacto-title">¿Dónde <span>encontrarnos?</span></h2>
+          </div>
+          <p class="section-summary">Toca un teléfono para llamar, el correo para escribir, o usa “Copiar” para guardar el dato.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!--
+            Cada <dd data-contacto="..."> se convierte en enlace y recibe un botón "Copiar".
+            Tipos disponibles: telefono, correo, texto. Un <dt> puede tener varios <dd>.
+          -->
+          <dl class="contact-list">
+            <div class="contact-item">
+              <dt>Dirección</dt>
+              <dd data-contacto="texto">6a. Avenida 2-33, zona 1 (Avenida del Estadio), Cobán, Alta Verapaz</dd>
+            </div>
+            <div class="contact-item">
+              <dt>Teléfonos (PBX)</dt>
+              <dd data-contacto="telefono">7952 1041</dd>
+              <dd data-contacto="telefono">7952 1776</dd>
+            </div>
+            <div class="contact-item">
+              <dt>Correo electrónico</dt>
+              <dd data-contacto="correo">coban@umg.edu.gt</dd>
+            </div>
+            <div class="contact-item">
+              <dt>Horario de atención</dt>
+              <dd>Lunes a viernes: 09:00 a 19:00 horas</dd>
+              <dd>Sábado: 08:00 a 17:00 horas</dd>
+            </div>
+            <div class="contact-item">
+              <dt>Redes oficiales de la UMG</dt>
+              <dd class="social-links">
+                <a href="https://fb.com/u.marianogalvez" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://instagram.com/marianogalvez" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://youtube.com/@umarianogalvez" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://tiktok.com/@u.marianogalvez" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="https://linkedin.com/edu/school?id=12870" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </dd>
+            </div>
+          </dl>
+
+          <figure class="map-card" data-tilt>
+            <svg class="map-art" viewBox="0 0 400 260" role="img" aria-labelledby="map-alt">
+              <title id="map-alt">Ilustración decorativa de un mapa con un marcador en Cobán, Alta Verapaz. No es un mapa real.</title>
+              <rect width="400" height="260" class="map-bg"/>
+              <path class="map-block" d="M0 40h120v70H0zM150 0h90v80h-90zM270 30h130v90H270zM30 150h110v110H30zM180 120h80v70h-80zM290 160h110v100H290z"/>
+              <path class="map-road" d="M0 125c80-10 120 10 170 0s90-30 230-10M150 260c10-60 0-110 20-150S160 30 190 0M260 260c-10-50 10-90 30-130"/>
+              <path class="map-river" d="M0 215c60-20 110 10 160-10s100-40 240-20"/>
+              <path class="map-route" pathLength="100" d="M40 245c20-40 70-60 110-80s20-50 65-58"/>
+              <g class="map-pin">
+                <circle cx="215" cy="104" r="26" class="map-pulse"/>
+                <path d="M215 120s-16-14-16-27a16 16 0 0 1 32 0c0 13-16 27-16 27Z"/>
+                <circle cx="215" cy="93" r="6" class="map-pin-dot"/>
+              </g>
+            </svg>
+            <figcaption>
+              <strong>Cobán, Alta Verapaz</strong>
+              <span>Ilustración de referencia, no es un mapa real. Oficinas: 6a. Avenida 2-33, zona 1. Campus: 1ra. Calle 4-29, zona 5.</span>
+              <!-- Búsqueda de la dirección publicada en el sitio oficial (no es un enlace oficial de la UMG) -->
+              <a class="button button-small" href="https://www.google.com/maps/search/?api=1&amp;query=6a.+Avenida+2-33+zona+1+Cob%C3%A1n+Alta+Verapaz" target="_blank" rel="noopener noreferrer">Buscar en Google Maps <span aria-hidden="true">↗</span><span class="sr-only">(se abre en una pestaña nueva)</span></a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="no-form-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>Esta página no envía mensajes ni recopila datos. Comunícate directamente por los canales oficiales.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#inicio" aria-label="Campus Cobán, volver al inicio">
+          <img class="brand-logo" src="imagenes/logo-umg.png" alt="" width="44" height="44">
+          <span class="brand-copy">
+            <strong>Campus Cobán</strong>
+            <span>Universidad Mariano Gálvez de Guatemala</span>
+          </span>
+        </a>
+        <p>6a. Avenida 2-33, zona 1, Cobán, Alta Verapaz.<br>PBX 7952 1041 · 7952 1776 · coban@umg.edu.gt</p>
+      </div>
+      <nav aria-label="Secciones del sitio">
+        <h2 class="footer-title">Secciones</h2>
+        <ul>
+          <li><a href="#sede">La sede</a></li>
+          <li><a href="#carreras">Carreras</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#avisos">Avisos</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Enlaces oficiales">
+        <h2 class="footer-title">Fuentes oficiales</h2>
+        <ul>
+          <li><a href="https://www.umg.edu.gt/" target="_blank" rel="noopener noreferrer">umg.edu.gt <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.umg.edu.gt/coban" target="_blank" rel="noopener noreferrer">Campus Cobán <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.umg.edu.gt/admisiones" target="_blank" rel="noopener noreferrer">Admisiones <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.umg.edu.gt/info/aspirantes/" target="_blank" rel="noopener noreferrer">Requisitos <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p><span class="academic-badge">Proyecto académico</span> Sitio estudiantil no oficial. Nombre y escudo pertenecen a la Universidad Mariano Gálvez de Guatemala. Datos tomados de umg.edu.gt (octubre 2026).</p>
+      <p>© <span id="current-year">2026</span> · <a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante: aparece al bajar; el anillo muestra el avance de lectura -->
+  <a class="to-top" href="#inicio" aria-label="Volver arriba">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="to-top-track" cx="24" cy="24" r="21"/><circle class="to-top-ring" cx="24" cy="24" r="21" pathLength="100"/></svg>
+    <span aria-hidden="true">↑</span>
+  </a>
+
+  <!-- Panel de revisión: solo aparece al abrir la página con ?revisar -->
+  <aside class="review-panel" id="review-panel" aria-labelledby="review-title" hidden>
+    <div class="review-head">
+      <h2 id="review-title">Datos por completar</h2>
+      <button class="review-close" type="button" aria-label="Cerrar panel de revisión">×</button>
+    </div>
+    <p class="review-count" id="review-count"></p>
+    <ol id="review-list"></ol>
+  </aside>
+</body>
+</html>
